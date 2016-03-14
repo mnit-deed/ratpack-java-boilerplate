@@ -1,3 +1,11 @@
+# Gradle Wrapper (Boilerplate Only - Remove from your project!)
+gradle/wrapper
+
+# Gradle Build Files #
+.gradle/
+build/
+
+# Class Files #
 *.class
 
 # Mobile Tools for Java (J2ME)
