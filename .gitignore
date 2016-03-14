@@ -16,5 +16,25 @@ build/
 *.war
 *.ear
 
+# Eclipse Files #
+.externalToolBuilders/
+.metadata/
+.settings/
+bin/
+RemoteSystemsTempFiles/
+tmp/
+*.bak
+*.launch
+*.swp
+*.tmp
+.buildpath
+.classpath
+.cproject
+.factorypath
+.loadpath
+.project
+.target
+local.properties
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
