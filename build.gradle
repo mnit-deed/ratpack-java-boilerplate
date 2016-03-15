@@ -1,3 +1,30 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath "io.ratpack:ratpack-gradle:1.2.0"
+  }
+}
+
+if (!JavaVersion.current().java8Compatible) {
+  throw new IllegalStateException("Must be built with Java 8 or higher")
+}
+
+apply plugin: "io.ratpack.ratpack-java"
+apply plugin: "eclipse"
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile "org.slf4j:slf4j-simple:1.7.12"
+  testCompile "junit:junit:4.12"
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '2.12'
 }
+
+mainClassName = "mnit.deed.ui.api.RestEndpoint"
